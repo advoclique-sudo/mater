@@ -191,7 +191,7 @@ img{max-width:100%;display:block}
 
 /* ─── DIFERENCIAL ─── */
 #diferencial{background:var(--white)}
-.dif-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.dif-inner{display:block;max-width:780px;margin:0 auto}
 .dif-list{display:flex;flex-direction:column;gap:18px;margin-top:32px}
 .dif-item{display:flex;gap:14px;align-items:flex-start}
 .dif-check{width:28px;height:28px;min-width:28px;background:rgba(37,211,102,.12);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-top:2px}
@@ -534,7 +534,7 @@ footer{background:#041a15;padding:48px 0 28px}
           <div class="ll-step-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             <strong style="display:block;color:#0d2214;font-size:.9rem;margin-bottom:6px">Reúne os documentos</strong>
-            <p style="color:#6a7d70;font-size:.8rem;line-height:1.6;margin:0">Contratos, recibos, comprovantes de residência. Mesmo que falte algo, outros comprovantes são aceitos.</p>
+            <p style="color:#6a7d70;font-size:.8rem;line-height:1.6;margin:0">Documentos pessoais do requerente, contratos, comprovante de residência, guias de recolhimentos de tributos (ITR, CCIR). Mesmo que falte algo, a MATER lhe ajuda a providenciar.</p>
           </div>
         </div>
 
@@ -544,7 +544,7 @@ footer{background:#041a15;padding:48px 0 28px}
           <div class="ll-step-card">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:10px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             <strong style="display:block;color:#0d2214;font-size:.9rem;margin-bottom:6px">Processo simplificado</strong>
-            <p style="color:#6a7d70;font-size:.8rem;line-height:1.6;margin:0">Procedimento judicial mais simples que uma ação comum. A MATER cuida de tudo, do início ao fim.</p>
+            <p style="color:#6a7d70;font-size:.8rem;line-height:1.6;margin:0">O procedimento judicial do Lar Legal é processado pelo Núcleo da Justiça 4.0 do TJSC — desta forma é mais simples e rápido. A MATER cuida de tudo, do início ao fim.</p>
           </div>
         </div>
 
@@ -618,7 +618,7 @@ footer{background:#041a15;padding:48px 0 28px}
       {
         label: 'Etapa 2 — Ação Judicial',
         title: 'Como funciona o processo',
-        text: 'O Programa Lar Legal usa um rito especial criado pelo TJSC — mais rápido e barato do que uma ação de usucapião comum. A MATER faz o peticionamento, acompanha as audiências e cuida de toda a tramitação.',
+        text: 'O Programa Lar Legal usa um rito especial criado pelo TJSC — mais rápido e barato do que uma ação de usucapião comum. A MATER presta toda assistência para você, desde o projeto topográfico até o suporte jurídico, realiza o peticionamento do seu processo, acompanha e cuida de toda a tramitação, até o final do seu processo.',
         icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
         items: ['Protocolo da ação no TJSC', 'Audiência de instrução simplificada', 'Sem necessidade de localizar antigos proprietários', 'Custo reduzido com isenção de algumas taxas judiciais']
       },
@@ -999,18 +999,18 @@ footer{background:#041a15;padding:48px 0 28px}
     <div class="serv-grid fu">
       <div class="serv-card" onclick="window.open('https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!','_blank')">
         <span class="serv-num">01</span>
-        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
-        <h3>Usucapião</h3>
-        <p>Permite adquirir a propriedade por posse prolongada, contínua e pacífica — pela via judicial ou diretamente em cartório. Transformamos anos de posse em registro definitivo em seu nome, com todos os direitos de proprietário.</p>
-        <div class="serv-tags"><span class="serv-tag">Extraordinária</span><span class="serv-tag">Ordinária</span><span class="serv-tag">Urbana</span><span class="serv-tag">Rural</span><span class="serv-tag">Familiar</span></div>
+        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/><path d="M9 9h6"/></svg></div>
+        <h3>Lar Legal</h3>
+        <p>Programa do TJSC que transforma posse em propriedade para quem ocupa imóvel há mais de 5 anos. Por procedimento judicial simplificado, garanta o registro em cartório, segurança jurídica e valorização do imóvel — para áreas urbanas e rurais.</p>
+        <div class="serv-tags"><span class="serv-tag">Lar Legal Urbano</span><span class="serv-tag">Lar Legal Rural</span><span class="serv-tag">Até 50 ha</span><span class="serv-tag">Agricultura Familiar</span></div>
         <div class="serv-arrow">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </div>
       <div class="serv-card" onclick="window.open('https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!','_blank')">
         <span class="serv-num">02</span>
-        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
-        <h3>Adjudicação</h3>
-        <p>Transferência legal da propriedade de forma segura e definitiva, seja compulsória ou voluntária.</p>
-        <div class="serv-tags"><span class="serv-tag">Compulsória</span><span class="serv-tag">Voluntária</span></div>
+        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Usucapião</h3>
+        <p>Permite adquirir a propriedade por posse prolongada, contínua e pacífica — pela via judicial ou diretamente em cartório. Transformamos anos de posse em registro definitivo em seu nome, com todos os direitos de proprietário.</p>
+        <div class="serv-tags"><span class="serv-tag">Extraordinária</span><span class="serv-tag">Ordinária</span><span class="serv-tag">Urbana</span><span class="serv-tag">Rural</span><span class="serv-tag">Familiar</span></div>
         <div class="serv-arrow">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </div>
       <div class="serv-card" onclick="window.open('https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!','_blank')">
@@ -1023,34 +1023,18 @@ footer{background:#041a15;padding:48px 0 28px}
       </div>
       <div class="serv-card" onclick="window.open('https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!','_blank')">
         <span class="serv-num">04</span>
-        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Planejamento Sucessório</h3>
-        <p>Organize a transmissão do seu patrimônio com segurança jurídica e eliminação de conflitos familiares.</p>
-        <div class="serv-tags"><span class="serv-tag">Testamentos</span><span class="serv-tag">Holding familiar</span><span class="serv-tag">Heranças</span></div>
+        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3>Adjudicação</h3>
+        <p>Transferência legal da propriedade de forma segura e definitiva, seja compulsória ou voluntária.</p>
+        <div class="serv-tags"><span class="serv-tag">Compulsória</span><span class="serv-tag">Voluntária</span></div>
         <div class="serv-arrow">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </div>
       <div class="serv-card" onclick="window.open('https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!','_blank')">
         <span class="serv-num">05</span>
-        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
-        <h3>Problemas com Construtoras</h3>
-        <p>Atrasos na entrega, defeitos na obra ou cláusulas abusivas? Defendemos seus direitos com firmeza e resultado.</p>
-        <div class="serv-tags"><span class="serv-tag">Atrasos</span><span class="serv-tag">Vícios de obra</span></div>
-        <div class="serv-arrow">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-      </div>
-      <div class="serv-card" onclick="window.open('https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!','_blank')">
-        <span class="serv-num">06</span>
-        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <h3>Contratos de Locação Comercial</h3>
-        <p>Revisão e renovação de contratos para garantir equilíbrio contratual e proteção jurídica completa.</p>
-        <div class="serv-tags"><span class="serv-tag">Revisão</span><span class="serv-tag">Renovação</span></div>
-        <div class="serv-arrow">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-      </div>
-      <div class="serv-card" onclick="window.open('https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!','_blank')">
-        <span class="serv-num">07</span>
-        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/><path d="M9 9h6"/></svg></div>
-        <h3>Lar Legal</h3>
-        <p>Programa do TJSC que transforma posse em propriedade para quem ocupa imóvel há mais de 5 anos. Por procedimento judicial simplificado, garanta o registro em cartório, segurança jurídica e valorização do imóvel — para áreas urbanas e rurais.</p>
-        <div class="serv-tags"><span class="serv-tag">Lar Legal Urbano</span><span class="serv-tag">Lar Legal Rural</span><span class="serv-tag">Até 50 ha</span><span class="serv-tag">Agricultura Familiar</span></div>
+        <div class="serv-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Planejamento Sucessório</h3>
+        <p>Organize a transmissão do seu patrimônio com segurança jurídica e eliminação de conflitos familiares.</p>
+        <div class="serv-tags"><span class="serv-tag">Testamentos</span><span class="serv-tag">Holding familiar</span><span class="serv-tag">Heranças</span></div>
         <div class="serv-arrow">Saiba mais <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </div>
     </div>
@@ -1108,17 +1092,6 @@ footer{background:#041a15;padding:48px 0 28px}
           <div class="dif-item"><div class="dif-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><div><h4>Foco absoluto no resultado</h4><p>Nossa reputação foi construída caso a caso. Seu sucesso é nossa referência.</p></div></div>
         </div>
       </div>
-      <div class="fu">
-        <div class="dif-panel">
-          <p class="dif-panel-title">Como funciona o atendimento</p>
-          <div class="dif-panel-item"><div class="dif-dot"></div><span>01 — Contato inicial via WhatsApp</span></div>
-          <div class="dif-panel-item"><div class="dif-dot"></div><span>02 — Análise gratuita do seu caso</span></div>
-          <div class="dif-panel-item"><div class="dif-dot"></div><span>03 — Proposta de solução personalizada</span></div>
-          <div class="dif-panel-item"><div class="dif-dot"></div><span>04 — Início do processo com suporte total</span></div>
-          <div class="dif-panel-item"><div class="dif-dot"></div><span>05 — Acompanhamento até o resultado final</span></div>
-          <a href="https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!" target="_blank" class="btn btn--wa" style="margin-top:8px;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Análise gratuita agora</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1135,6 +1108,7 @@ footer{background:#041a15;padding:48px 0 28px}
       <div class="faq-list">
         <div class="faq-item fu"><div class="faq-q" onclick="toggleFaq(this)"><h3>O que é regularização imobiliária e por que ela é necessária?</h3><div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>Regularização imobiliária é o processo de garantir que seu imóvel esteja juridicamente correto — com escritura, registro e documentação em ordem. Sem isso, você não pode vender, financiar ou transferir o bem legalmente.</p></div></div>
         <div class="faq-item fu"><div class="faq-q" onclick="toggleFaq(this)"><h3>Quanto tempo leva para regularizar um imóvel?</h3><div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>Depende do tipo de regularização e da complexidade do caso. Processos mais simples podem ser resolvidos em meses, enquanto usucapiões judiciais podem levar mais tempo. A MATER faz uma análise gratuita e já informa os prazos realistas antes de começar.</p></div></div>
+        <div class="faq-item fu"><div class="faq-q" onclick="toggleFaq(this)"><h3>Por que o Lar Legal é melhor que a Usucapião?</h3><div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>O Lar Legal é um processo coletivo e simplificado criado pelo Tribunal de Justiça para entregar sua escritura em poucos meses. Na Usucapião tradicional, o processo é individual, muito mais caro e pode demorar de 3 a 7 anos na Justiça.</p></div></div>
         <div class="faq-item fu"><div class="faq-q" onclick="toggleFaq(this)"><h3>Vocês atendem em Todo o Brasil?</h3><div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>Sim! A MATER atua em todo o Brasil com suporte completo de ponta a ponta, com comunicação digital ágil e transparente.</p></div></div>
         <div class="faq-item fu"><div class="faq-q" onclick="toggleFaq(this)"><h3>Qual é a diferença entre usucapião e adjudicação?</h3><div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>O usucapião é o reconhecimento da propriedade por posse prolongada e contínua. Já a adjudicação é a transferência legal da propriedade quando o vendedor não cumpre a escritura. São caminhos diferentes para situações diferentes.</p></div></div>
         <div class="faq-item fu"><div class="faq-q" onclick="toggleFaq(this)"><h3>Como funciona a análise gratuita?</h3><div class="faq-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></div><div class="faq-a"><p>Você entra em contato pelo WhatsApp, descreve brevemente sua situação e nossa equipe faz uma avaliação inicial gratuita. Em seguida, apresentamos a melhor estratégia e os custos envolvidos — sem compromisso.</p></div></div>
@@ -1176,14 +1150,13 @@ footer{background:#041a15;padding:48px 0 28px}
       </div>
       <div>
         <h4>Serviços</h4>
-        <div class="footer-links">
-          <a href="#servicos">Usucapião</a>
-          <a href="#servicos">Adjudicação</a>
-          <a href="#servicos">Regularização Fundiária</a>
-          <a href="#servicos">Planejamento Sucessório</a>
-          <a href="#servicos">Problemas com Construtoras</a>
-          <a href="#servicos">Contratos de Locação</a>
-        </div>
+          <div class="footer-links">
+            <a href="#servicos">Lar Legal</a>
+            <a href="#servicos">Usucapião</a>
+            <a href="#servicos">REURB — Regularização Fundiária</a>
+            <a href="#servicos">Adjudicação</a>
+            <a href="#servicos">Planejamento Sucessório</a>
+          </div>
       </div>
       <div>
         <h4>Contato</h4>
@@ -1191,6 +1164,10 @@ footer{background:#041a15;padding:48px 0 28px}
           <a href="https://wa.me/5547997560992?text=Quero%20regularizar%20meu%20im%C3%B3vel!" target="_blank">WhatsApp</a>
           <a href="#faq">Dúvidas Frequentes</a>
           <a href="#diferencial">Por que a MATER</a>
+        </div>
+        <div style="margin-top:18px;font-size:.78rem;color:rgba(255,255,255,.5);line-height:1.6">
+          <div style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:6px">Endereço</div>
+          Praça Silvéria Ferreira de Campos, nº 180<br>Centro · Leoberto Leal — SC
         </div>
       </div>
     </div>
